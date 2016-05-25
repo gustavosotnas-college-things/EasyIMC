@@ -1,21 +1,11 @@
+##![EasyIMC](https://cdn.rawgit.com/gustavosotnas/DSW-Prototipo-GUI-INF-UFG/gh-pages/assets/icon/easyimc_logo.svg)
 
-# Laboratório de DW 2016/1
+### Descrição
 
-## Vídeos
+*EasyIMC* (IMC fácil), como o próprio nome já diz, é um projeto de um site de consulta de IMC (*Índice de Massa Corpórea*) de um pessoa, de forma simples, rápida e fácil. Nele, preenche-se um pequeno formulário com *Peso* (em *kg*), *Altura* (em *cm*), *Idade* e *sexo*.
 
-* [Clonar e importar projeto Maven.](https://rawgit.com/walisonmoreira/ufg-inf-dw-2016-1/master/src/site/clonar-e-importar-projeto-maven/clonar-e-importar-projeto-maven.html)
-* [Configurar servidor de aplicação.](https://rawgit.com/walisonmoreira/ufg-inf-dw-2016-1/master/src/site/configurar-servidor-de-aplicacao/configurar-servidor-de-aplicacao.html)
-* [Download do Eclipse](https://rawgit.com/walisonmoreira/ufg-inf-pw-2016-1/master/videos/download-eclipse/download-eclipse.html)
-* [Criação de repositório no GitHub](https://rawgit.com/walisonmoreira/ufg-inf-pw-2016-1/master/videos/criar-repositorio-github/criar-repositorio-github.html)
-* [Clone, commit e push no Eclipse](https://rawgit.com/walisonmoreira/ufg-inf-pw-2016-1/master/videos/clone-commit-push-eclipse/clone-commit-push-eclipse.html)
-* [Criação e execução de projeto web Maven no Eclipse.](https://rawgit.com/walisonmoreira/ufg-inf-pw-2016-1/master/videos/criacao-execucao-projeto-web-maven-eclipse/criacao-execucao-projeto-web-maven-eclipse.html)
-* [Compartilhando projeto no Eclipse através do Git.](https://rawgit.com/walisonmoreira/ufg-inf-pw-2016-1/master/videos/compartilhando-projeto-eclipse-git/compartilhando-projeto-eclipse-git.html)
-* [Criando uma configuração de execução no Eclipse e colocando-a nos favoritos.](https://rawgit.com/walisonmoreira/ufg-inf-pw-2016-1/master/videos/execucao-no-favoritos/execucao-no-favoritos.html)
-* [Importanto projeto Maven no Eclipse.](https://rawgit.com/walisonmoreira/ufg-inf-pw-2016-1/master/videos/importacao-projeto-maven/importacao-projeto-maven.html)
+Foi feito a partir [deste protótipo de interface gráfica](https://github.com/gustavosotnas/DSW-Prototipos-GUI-INF-UFG/blob/gh-pages/assets/proto/imc.pdf) proposto pelo professor, usando o framework [**Bootstrap**](http://getbootstrap.com) para *front-end*, com *back-end* em [**Java EE**](http://www.oracle.com/technetwork/java/javaee/overview/index.html).
 
-## Links
-
-* [W3Schools](http://www.w3schools.com/) - Online Web Tutorials (site)
-  * [HTML](http://www.w3schools.com/html/)
-  * [CSS](http://www.w3schools.com/css/)
-  * [Java Script](http://www.w3schools.com/js/)
+Autor
+-----
+Gustavo Moraes - [gustavosotnas1@gmail.com](mailto:gustavosotnas1@gmail.com)
