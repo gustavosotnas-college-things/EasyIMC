@@ -1,9 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <name>EasyIMC</name>
+  <url>https://github.com/gustavosotnas/EasyIMC</url>
+  <description>Protótipo funcional de site de consulta de IMC (Índice de Massa Corpórea) de uma pessoa, de forma simples, rápida e fácil.</description>
+
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ufg</groupId>
 
-  <artifactId>ufg-inf-dw-2016-1</artifactId>
+  <artifactId>EasyIMC</artifactId>
 
   <packaging>war</packaging>
 
@@ -24,7 +28,7 @@
   </dependencies>
 
   <build>
-    <finalName>ufg-inf-dw-2016-1</finalName>
+    <finalName>EasyIMC</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
