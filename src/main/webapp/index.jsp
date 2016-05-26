@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-	index.html
+	index.jsp
 
 	Página inicial do EasyIMC
 	Autor: Gustavo Moraes
