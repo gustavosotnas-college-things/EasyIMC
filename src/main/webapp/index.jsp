@@ -66,16 +66,37 @@
 			String alturaStr = request.getParameter("altura");
 			Double peso = Double.parseDouble(pesoStr == null ? "0" : pesoStr);
 			Double altura = Double.parseDouble(alturaStr == null ? "0" : alturaStr);
-			double result = 0;
+			double result = 0, IMC = 0;
 			if (peso == null || altura == null)
 			{
-				out.print("Resultado: " + result);
 				return;
 			}
 			else
 			{
-				result = peso / (altura * altura);
-				out.print("<center><div>Resultado: " + (Math.round(result*100))/100.0 + "</div></center>");
+				result = peso/(altura*altura);
+				IMC = (Math.round(result*100))/100.0;
+				out.print("<script type=text/javascript>");
+				if (IMC < 18.5)
+				{
+					out.print("alert('Abaixo do peso ideal\\nÍndice: " + IMC + "');");
+				}
+				else if (IMC >= 18.5 && IMC < 24.9)
+				{
+					out.print("alert('No peso ideal.\\nÍndice: " + IMC + "');");
+				}
+				else if (IMC >= 25 && IMC < 29.9)
+				{
+					out.print("alert('Acima do peso ideal.\\nÍndice: " + IMC + "');");
+				}
+				else if (IMC >= 30 && IMC < 39.9)
+				{
+					out.print("alert('Obesidade, muito acima do peso ideal.\\nÍndice: " + IMC + "');");
+				}
+				else if (IMC > 40)
+				{
+					out.print("alert('Obesidade mórbida.\\nÍndice: " + IMC + "');");
+				}
+				out.print("</script>");
 			}
 		%>
 		</div>
