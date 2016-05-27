@@ -78,7 +78,7 @@
 				result = peso/(altura*altura);
 				IMC = (Math.round(result*100))/100.0;
 				out.print("<script type=text/javascript>");
-				if (IMC < 18.5)
+				if (IMC > 0.0 && IMC < 18.5)
 				{
 					out.print("alert('Abaixo do peso ideal\\nÍndice: " + IMC + "');");
 				}
