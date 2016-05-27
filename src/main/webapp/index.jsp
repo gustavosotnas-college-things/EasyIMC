@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<%@ page language="java" %>
 <!--
 	index.jsp
 
@@ -12,7 +13,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="styles/paper_bootstrap.min.css">
 		<link rel="stylesheet" href="styles/index.css">
-		<script src="js/index.js"></script>
 		<link rel="icon" href="assets/icon/ruler-icon.png">
 		<title>EasyIMC</title>
 	</head>
@@ -55,6 +55,29 @@
 				</div>
 				<button type="submit" class="btn btn-default" onclick="calculaIMC()">Calcular</button>
 			</form>
+		<script language="JavaScript">
+			function calculaIMC()
+			{
+				formularioIMC.submit();
+			}
+		</script>
+		<%
+			String pesoStr = request.getParameter("peso");
+			String alturaStr = request.getParameter("altura");
+			Double peso = Double.parseDouble(pesoStr == null ? "0" : pesoStr);
+			Double altura = Double.parseDouble(alturaStr == null ? "0" : alturaStr);
+			double result = 0;
+			if (peso == null || altura == null)
+			{
+				out.print("Resultado: " + result);
+				return;
+			}
+			else
+			{
+				result = peso / (altura * altura);
+				out.print("<center><div>Resultado: " + (Math.round(result*100))/100.0 + "</div></center>");
+			}
+		%>
 		</div>
 	</body>
 </html>
