@@ -37,7 +37,7 @@
 			<h2>Calcule o seu IMC</h2>
 			<p>Calcule seu índice de massa corporal e saiba se você está com 
 			sobrepeso, obesidade, subnutrição ou se está no peso ideal.</p>
-			<form role="form" name="formularioIMC" id="formularioIMC">
+			<form role="form" name="formularioIMC" id="formularioIMC" action="./EasyIMC">
 				<div class="form-group">
 					<label for="peso-label">Seu peso:</label>
 					<input type="number" class="form-control" id="peso" name="peso" placeholder="Peso em quilogramas (kg), ex.: 80">
@@ -55,17 +55,11 @@
 						<label><input type="radio" name="optradio" id="sexo-fem">Feminino</label>
 					</div>
 				</div>
-				<button type="submit" class="btn btn-default" onclick="calculaIMC()">Calcular</button>
+				<button type="submit" class="btn btn-default">Calcular</button>
 			</form>
-			<script type=text/javascript>
-				function calculaIMC()
-				{
-					formularioIMC.submit();
-				}
-			</script>
-			<script type=text/javascript>
+			<p>
 				${resultado}
-			</script>
+			</p>
 		</div>
 	</body>
 </html>
