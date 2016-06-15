@@ -30,7 +30,7 @@ public class EasyIMCController extends HttpServlet {
 		{
 			IMC imc = EasyIMCModel.calculaIMC(peso, altura);
 			//Passando resultado para o JSP.
-			request.setAttribute("resultado", "alert('"+ imc.status + "\\nÍndice: " + imc.indice + "');");
+			request.setAttribute("resultado", imc.status + "\\nÍndice: " + imc.indice);
 	
 			request.getRequestDispatcher("index.jsp").forward(request, resp);
 		}
