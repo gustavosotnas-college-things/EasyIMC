@@ -22,6 +22,7 @@ public class EasyIMCController extends HttpServlet {
 		Double peso = Double.parseDouble(pesoStr == null ? "0" : pesoStr);
 		Double altura = Double.parseDouble(alturaStr == null ? "0" : alturaStr);
 		double result = 0, IMC = 0;
+		String resultado;
 		if (peso == null || altura == null)
 		{
 			return;
@@ -30,8 +31,8 @@ public class EasyIMCController extends HttpServlet {
 		{
 			IMC imc = EasyIMCModel.calculaIMC(peso, altura);
 			//Passando resultado para o JSP.
-			request.setAttribute("resultado", imc.status + "\\nÍndice: " + imc.indice);
-	
+			resultado = imc.status + "\\nÍndice: " + imc.indice;
+			request.setAttribute("resultado", resultado);
 			request.getRequestDispatcher("index.jsp").forward(request, resp);
 		}
 	}
